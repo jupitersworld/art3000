@@ -1,0 +1,22 @@
+h1{
+    text-shadow: 2px 2px cornflowerblue;}
+    h2{text-decoration: underline;
+        text-align: right;
+        text-transform: uppercase;
+       text-size-adjust: 3px;
+    }
+    h3{
+        text-decoration: line-through;
+        text-decoration-color: darkred;
+        font-style: italic;
+    }
+    h4{
+        color: darkviolet;
+        text-align: center;
+        text-shadow: 5px 2px forestgreen;
+    }
+    h5{
+        font-family: 'Playfair Display', serif;
+        color: lightseagreen;
+        background-color: indigo;
+    }
