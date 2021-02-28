@@ -10,8 +10,8 @@ body{
     overflow-y: hidden;
 }
 .metaBox{
-    background: #83e5e5;
-    min-height: 32px;
+    background: gray;
+    min-height: 20px;
     display: flex;
     align-items: center;
 }
@@ -38,15 +38,15 @@ nav{
 }
 .icons{
     display: grid;
-    grid-template-columns: repeat(16,1fr);
+    grid-template-columns: repeat(9,1fr);
     grid-template-rows: 80px;
     grid-gap: 15px;
     align-items: center;
-    width: 100%;
+    width: 40%;
 }
 .navicon{ 
-    background: #a183e2;
+
 }
 .navicon img{
-    max-width: 100%;
+    max-width: 120%;
 }
