@@ -1,112 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="index.css">
-    <title>Cartoon IMDb</title>
-</head>
-<body>
-    <nav>
-        <div class="metabox">
-  <div class="navicon"> 
-          <a href="/exercises/index.html"><img src="Icons/CIMDb.png" height="50px"></a>
-          <a href="my link"><img src="Icons/Movies.png" height="50px"></a>
-         <a href=""><img src="Icons/TV.png" height="50px"></a>
-          <a href="my link"><img src="Icons/Stars.png" height="50px"></a>
-          <a href=""><img src="Icons/Actors redux.jpg" height="50px"></a>
-          <a href=""><img src="Icons/Community.png" height="50px"></a>
-  </div>
-</div>
-</nav>
-  <div class="wrapper">
-<div class="contentbox">
-<div class="content">
-   
-       <div>
-           <br>
-           <br>
-       </div>
-       <div>
-        <div class="img-box">
-            <img src="movies/best shrek.jpg"   class="image">
-            <div class="overlay">
-                <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or will he crack under pressure?
-                </div>
-            </div>
-        </div> 
-        
-       </div>
-        
-        <h1>Featured Today</h1>
-        <a href="#" class="previous round">&#8249;</a>
-   <img src="shows/finn.jpg" height="150px">
-   <img src="movies/remy.jpeg" height="150px">
-   <img src="shows/rigby.jpeg" height="150px">
-   <img src="movies/kuzco.jpg" height="150px">
-   <img src="movies/buzz.jpeg" height="150px">
-   <img src="shows/terry.jpg" height="150px" >
-   <img src="movies/robots.jpeg" height="150px">
-   <img src="movies/hoodwinked.jpeg" height="150px">
-   <img src="shows/clonehigh.jpg" height="150px" width="120px">
-   <a href="#" class="next round">&#8250;</a>
-<h1>Hit Movies</h1>
-<a href="#" class="previous round">&#8249;</a>
-<img src="movies/sing.jpg" height="150px">
-<img src="movies/best shrek.jpg" height="150px">
-<img src="movies/oscar.jpeg" height="150px">
-<img src="movies/zootopia.jpeg" height="150px">
-<img src="movies/spongebob.jpeg" height="150px">
-<img src="movies/boo.jpeg" height="150px">
-<img src="movies/monsters.jpeg" height="150px">
-<img src="movies/remy.jpeg" height="150px">
-<img src="movies/buzz.jpeg" height="150px">
-<a href="#" class="next round">&#8250;</a>
-<h1>Explore TV Shows</h1>
-<a href="#" class="previous round">&#8249;</a>
-<img src="shows/bojack.jpeg" height="150px">
-<img src="shows/teen titans.jpg" height="150px">
-<img src="shows/awog.png" height="150px" width="100px">
-<img src="shows/harley.jpg" height="150px">
-<img src="shows/jake long.jpg" height="150px" width="100px">
-<img src="shows/solar opposites.jpeg" height="150px">
-<img src="shows/fairy idol.jpeg" height="150px">
-<img src="shows/chicken.png" height="150px">
-<img src="shows/zim.jpg" height="150px" width="110px">
-<a href="#" class="next round">&#8250;</a>
-<h1>Famous Actors</h1>
-<a href="#" class="previous round">&#8249;</a>
-<img src="actors/alex.jpg" height="102px">
-<img src="actors/tuca.jpg" height="100px">
-<img src="actors/bj.jpg" height="100px">
-<img src="actors/shrek.jpg" height="100px">
-<img src="actors/lenny.jpg" height="100px">
-<img src="actors/darwin.JPEG" height="105px">
-<a href="#" class="next round">&#8250;</a>
-</div>
-</div>
-  </div>
-  <br>
-  <br>
-  <br>
 
-  <div class="container">
-    <form action="action_page.php">
-      <div class="row">
-        <div class="col-25">
-          <h1><label for="fname">CIMDb Community</label></h1>
-        </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="firstname" placeholder="Username">
-        </div>
-      </div>
-      <div class="col-75">
-        <textarea id="comment something" name="comment something" placeholder="Write something.." style="height:200px"></textarea>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Cartoon IMDb</title>
+</head>
+
+<body>
+  <nav>
+    <div class="metabox">
+      <div class="navicon">
+        <a href="/exercises/index.html"><img src="Icons/CIMDb.png" height="50px"></a>
+        <a href="my link"><img src="Icons/Movies.png" height="50px"></a>
+        <a href=""><img src="Icons/TV.png" height="50px"></a>
+        <a href="my link"><img src="Icons/Stars.png" height="50px"></a>
+        <a href=""><img src="Icons/Actors redux.jpg" height="50px"></a>
+        <a href=""><img src="Icons/Community.png" height="50px"></a>
       </div>
     </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
+  </nav>
+  <div class="wrapper">
+    <div class="contentbox">
+      <div class="content">
+
+        <div>
+          <br>
+          <br>
+        </div>
+        <h1>Featured Today</h1>
+        <div class="filmBox">
+          <div class="arBut">
+            <a href="#" class="previous round">&#8249;</a>
+          </div>
+          <div class="img-box">
+            <img src="movies/best shrek.jpg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="shows/finn.jpg" class="image">
+            <div class="overlay">
+              <div class="text"> In this slapstick comedy, <i>Finn and Jake</i>, you'll get to watch two very unlikely roommates and their weekly wacky shenanigans. Tune in every Tuesday at 9/8pm central.
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/remy.jpeg" class="image">
+            <div class="overlay">
+              <div class="text">
+The biopic covering the success of the rat that is Remy. <i>Ratatouille</i> covers the rise and fall of Remy Rat's life from his abusive father to homelessness to his amazing rise into fame with his glorious dishes. There will be love, laughter and tears in this movie.
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="shows/rigby.jpeg" class="image">
+            <div class="overlay">
+              <div class="text">
+The biopic covering the success of the rat that is Remy. <i>Ratatouille</i> covers the rise and fall of Remy Rat's life from his abusive father to homelessness to his amazing rise into fame with his glorious dishes. There will be love, laughter and tears in this movie.
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/kuzco.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+The biopic covering the success of the rat that is Remy. <i>Ratatouille</i> covers the rise and fall of Remy Rat's life from his abusive father to homelessness to his amazing rise into fame with his glorious dishes. There will be love, laughter and tears in this movie.
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/buzz.jpeg" class="image">
+            <div class="overlay">
+              <div class="text">
+The biopic covering the success of the rat that is Remy. <i>Ratatouille</i> covers the rise and fall of Remy Rat's life from his abusive father to homelessness to his amazing rise into fame with his glorious dishes. There will be love, laughter and tears in this movie.
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="shows/terry.jpg" class="image">
+            <div class="overlay">
+              <div class="text">
+The biopic covering the success of the rat that is Remy. <i>Ratatouille</i> covers the rise and fall of Remy Rat's life from his abusive father to homelessness to his amazing rise into fame with his glorious dishes. There will be love, laughter and tears in this movie.
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/robots.jpeg" class="image">
+            <div class="overlay">
+              <div class="text">
+The biopic covering the success of the rat that is Remy. <i>Ratatouille</i> covers the rise and fall of Remy Rat's life from his abusive father to homelessness to his amazing rise into fame with his glorious dishes. There will be love, laughter and tears in this movie.
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/hoodwinked.jpeg" class="image">
+            <div class="overlay">
+              <div class="text">
+The biopic covering the success of the rat that is Remy. <i>Ratatouille</i> covers the rise and fall of Remy Rat's life from his abusive father to homelessness to his amazing rise into fame with his glorious dishes. There will be love, laughter and tears in this movie.
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="shows/clonehigh.jpg" width="180px" class="image">
+            <div class="overlay">
+              <div class="text">
+The biopic covering the success of the rat that is Remy. <i>Ratatouille</i> covers the rise and fall of Remy Rat's life from his abusive father to homelessness to his amazing rise into fame with his glorious dishes. There will be love, laughter and tears in this movie.
+              </div>
+            </div>
+          </div>
+           
+          <div class="arBut">
+            <a href="#" class="next round">›</a>
+          </div>
+        </div>
+<br>
+<br>
+<h1>Hit Movies</h1>
+       <div class="filmBox">
+        <div class="arBut">
+          <a href="#" class="previous round">&#8249;</a>
+        </div>
+        <div class="img-box">
+            <img src="movies/sing.jpg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/oscar.jpeg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/zootopia.jpeg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/spongebob.jpeg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/boo.jpeg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/monsters.jpeg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/remy.jpeg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/buzz.jpeg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="movies/best shrek.jpg" class="image">
+            <div class="overlay">
+              <div class="text"> Join Shrek as we watch his new hit movie: <i>Meet The Royals</i> where Shrek tries to
+                become a people pleaser for his new princess wife. Watch as he juggles the hilarious antics of trouble
+                in the castle, new friends during a camping trip fiasco, and so much more. Will her family accept him or
+                will he crack under pressure?
+              </div>
+            </div>
+          </div>
+          <div class="arBut">
+            <a href="#" class="next round">›</a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <h1>Explore TV Shows</h1>
+       <div class="filmBox">
+        <div class="arBut">
+          <a href="#" class="previous round">&#8249;</a>
+        </div>
+         <div class="img-box">
+<img src="shows/bojack.jpeg" class="image">
+<div class="overlay">
+  <div class="text">
+
+  </div>
 </div>
+         </div>
+         <div class="img-box">
+<img src="shows/teen titans.jpg" class="image">
+<div class="overlay">
+  <div class="text">
+
+  </div>
+</div>
+         </div>
+         <div class="img-box">
+<img src="shows/awog.png" class="image">
+<div class="overlay">
+  <div class="text">
+
+  </div>
+</div>
+         </div>
+         <div class="img-box">
+<img src="shows/harley.jpg" class="image">
+<div class="overlay">
+  <div class="text">
+
+  </div>
+</div>
+         </div>
+         <div class="img-box">
+<img src="shows/jake long.jpg" class="image">
+<div class="overlay">
+  <div class="text"> 
+
+  </div>
+</div>
+         </div>
+         <div class="img-box">
+<img src="shows/solar opposites.jpeg" class="image">
+<div class="overlay">
+  <div class="text">
+
+  </div>
+</div>
+         </div>
+         <div class="img-box">
+<img src="shows/fairy idol.jpeg" class="image">
+<div class="overlay">
+  <div class="text">
+
+  </div>
+</div>
+         </div>
+         <div class="img-box">
+<img src="shows/chicken.png"  class="image">
+<div class="overlay">
+  <div class="text">
+
+  </div>
+</div>
+         </div>
+         <div class="img-box">
+<img src="shows/zim.jpg" class="image" width="150px">
+<div class="overlay">
+  <div class="text">
+
+  </div>
+</div>
+         </div>
+        
+        <div class="arBut">
+          <a href="#" class="next round">›</a>
+        </div>
+       </div>
+
+
+
+<br>
+<br>
+       <h1>Famous Actors</h1>
+       <div class="filmBox">
+         <div class="arBut">
+           <a href="#" class="previous round">&#8249;</a>
+         </div>
+         <img src="actors/alex.jpg" height="202px">
+         <img src="actors/tuca.jpg" height="200px">
+         <img src="actors/bj.jpg" height="200px">
+         <img src="actors/shrek.jpg" height="200px">
+         <img src="actors/lenny.jpg" height="200px">
+         <img src="actors/darwin.JPEG" height="205px">
+         <div class="arBut">
+           <a href="#" class="next round">›</a>
+         </div>
+       </div>
+       <br>
+       <br>
+
+       <div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <h1><label for="fname">CIMDb Community</label></h1>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-75">
+            <textarea id="comment something" name="comment something" placeholder="Share with your community!"
+              style="height:400px"></textarea>
+          </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+       </div>
+        </div>
+
+
+        
+       
+        
+      </div>
+    
+  
+ 
+
+  
+  
+  
 </body>
+
 </html>
